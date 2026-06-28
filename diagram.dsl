@@ -1,4 +1,4 @@
-workspace "ERP-Frontend-Architektur" "C4-Modell zur Case Study für eine zentrale Angular-Webanwendung" {
+workspace "ERP-Architektur Case Study" "C4-Modell mit Fokus auf die zentrale Angular-Webanwendung" {
 
     model {
         financeUser = person "Finance-Nutzer" "Erstellt Finanzberichte und wertet ERP-Daten aus." "person"
@@ -23,7 +23,7 @@ workspace "ERP-Frontend-Architektur" "C4-Modell zur Case Study für eine zentral
             financeUser -> angularApp "nutzt für Finanzberichte"
             hrManager -> angularApp "nutzt für Mitarbeiter-Onboarding"
 
-            angularApp -> identityProvider "authentifiziert Benutzer"
+            angularApp -> identityProvider "nutzt für Login, SSO und Rolleninformationen"
             appShell -> coreServices "nutzt technische Basisdienste"
             appShell -> sharedUi "nutzt gemeinsames Layout und UI-Komponenten"
             appShell -> globalState "liest Benutzer- und Berechtigungszustand"
