@@ -4,7 +4,7 @@ C4-Diagramme für eine zentrale Angular-Webanwendung in einem ERP-System mit den
 
 ## Architekturidee
 
-Das Frontend wird als modularer Frontend-Modulith aufgebaut. Jede Domäne erhält einen eigenen lazy-loaded Feature-Bereich.
+Das Frontend wird als modularer Frontend aufgebaut. Jede Domäne erhält einen eigenen lazy-loaded Feature-Bereich.
 
 Gemeinsame UI-Komponenten liegen in einem Shared UI / Design System, damit das Look & Feel über alle Domänen konsistent bleibt.
 
